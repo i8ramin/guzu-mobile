@@ -1,0 +1,35 @@
+.details {
+  margin: 20px 0;
+}
+.details .section {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.details .section label {
+  display: block;
+  float: left;
+  padding: 15px 15px;
+  background-color: #ddd;
+  border-right: 1px solid #ccc;
+}
+.details .section label.selected {
+  background-color: #444;
+  color: white;
+}
+.details .section label input {
+  display: none;
+}
+.details .section label:first-of-type {
+  border-radius: 3px 0 0 3px;
+}
+.details .section label:last-of-type {
+  border-radius: 0 3px 3px 0;
+  border-right: 0;
+}
+
+.details .submit {
+  margin-top: 40px;
+}
+.details .submit button[type=submit] {
+  float: right;
+}
