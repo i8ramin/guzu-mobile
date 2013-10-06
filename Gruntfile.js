@@ -371,7 +371,7 @@ module.exports = function (grunt) {
         'copy:dist',
         'rev',
         'usemin',
-        'manifest'
+        'manifest:dist'
     ]);
 
     grunt.registerTask('default', [
