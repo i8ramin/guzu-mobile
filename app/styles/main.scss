@@ -1,0 +1,214 @@
+$green: #60B314;
+$gray: #F4F5EF;
+
+@import 'buttons';
+
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-user-select: none;  /* Disable selection/copy of elements when tapping for a long time */
+  -webkit-touch-callout: none; /* Disable touch callouts */
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  /*overflow: hidden;*/
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.2;
+  background: #f4f4f4;
+  color: #444;
+  position: relative;
+  cursor: default;
+
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+input, textarea {
+  -webkit-user-select: text;  /* Allow selection for input elements */
+}
+
+a {
+  color: #4AA6BD;
+  text-decoration: none;
+}
+a img {
+  border: none;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+select {
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: .25em;
+}
+
+#masthead {
+  overflow: hidden;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-top: 8px solid #60B314;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 3px 0 rgba(0,0,0,.05);
+
+  .logo {
+    display: block;
+    float: left;
+  }
+  .logo img {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+  h1 {
+    margin-left: 120px;
+    font-size: 10pt;
+    font-weight: normal;
+    color: #999;
+    text-align: right;
+  }
+}
+
+#main {
+  padding: 15px 15px 30px;
+}
+
+#menu {
+  background-color: #222;
+  color: white;
+}
+
+#products {
+  .intro {
+    text-align: center;
+    margin: 0 20px;
+    padding: 7px 10px;
+    background-color: #666;
+    color: #eee;
+    border-radius: 5px 5px 0 0;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.6);
+  }
+
+  .product {
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    text-align: center;
+
+    &.main {
+      text-align: left;
+    }
+
+    &.tapped {
+      background-color: #fafafa;
+    }
+
+    .info {
+      overflow: hidden;
+
+      img {
+        float: left;
+        margin: 0 15px 0 0;
+      }
+
+      p {
+        color: #999;
+      }
+    }
+
+    .options {
+      position: relative;
+      max-height: 0;
+      margin: 10px -16px -15px;
+      background-color: #666;
+      color: white;
+      overflow: hidden;
+
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+
+      .inner {
+        padding: 15px;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 4px 8px 0;
+
+        a {
+          display: block;
+          padding: 10px;
+          background-color: #aaa;
+          color: white;
+          border-radius: 4px;
+          text-shadow: 1px 1px 0 rgba(0,0,0,.35);
+
+          &.tapped {
+            background-color: #333;
+          }
+        }
+      }
+    }
+
+    &.active .options {
+      max-height: 300px;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 15px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    color: #999;
+  }
+}
+
+.panel {
+  border-radius: .5em;
+  background-color: #fff;
+  box-shadow: 0 3px 2px rgba(0,0,0,.15);
+  overflow: hidden;
+}
+
+.close {
+  background: transparent url(../images/close.png) no-repeat 50%;
+  background-size: 20px auto;
+  width: 30px;
+  height: 30px;
+}
+
+.center {
+  text-align: center;
+}

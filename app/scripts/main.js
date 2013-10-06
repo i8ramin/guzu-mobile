@@ -10,12 +10,12 @@
   //   touchToDrag: false
   // });
 
-  // $(document).on(touchEvent, '[trigger]', function (e) {
+  // $(document.body).on(touchEvent, '[trigger]', function (e) {
   //   var snapperState = snapper.state();
   //   snapperState.state === 'closed' ? snapper.open('left') : snapper.close();
   // });
 
-  $(document).on('touchstart', '[tap]', function (e) {
+  $(document.body).on('mousedown touchstart', '[tap]', function (e) {
     var tapElem = $(this);
 
     tapTimer = setTimeout(function () {
@@ -23,7 +23,7 @@
     }, 100);
   });
 
-  $(document).on('touchend', '[tap]', function (e) {
+  $(document.body).on('mouseup touchend', '[tap]', function (e) {
     e.preventDefault();
 
     var tapElem = $(this);
@@ -61,29 +61,29 @@
     }
   });
 
-  $(document).on('touchmove', '[tap]', function (e) {
+  $(document.body).on('mousemove touchmove', '[tap]', function (e) {
     var tapElem = $(this);
     tapElem.removeClass('tapped');
   });
 
-  $(document).on('click', '[tap]', function (e) {
-    e.preventDefault();
-  });
+  // $(document.body).on('click', '[tap]', function (e) {
+  //   e.preventDefault();
+  // });
 
   // scroll detection
-  $(document).on('touchmove', function (e) {
+  $(document.body).on('touchmove', function (e) {
     scrolling = true;
   });
   $(window).on('scroll', function (e) {
     scrolling = false;
   });
 
-  // $(document).on(touchEvent, '[tap]', function (e) {
+  // $(document.body).on(touchEvent, '[tap]', function (e) {
   //   var el = $(this);
   //   var href = el.attr('tap');
   // });
 
-  $(document).on(touchEvent, '[select] label', function () {
+  $(document.body).on(touchEvent, '[select] label', function () {
     var label = $(this);
     var selectParent = label.parents('[select]');
 
