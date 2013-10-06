@@ -1,10 +1,8 @@
 <!doctype html>
-<html manifest="../../manifest.appcache">
+<html manifest="manifest.appcache">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <base href="../../">
 
   <title>Sell Your iPhone 5s online at Guzu.com</title>
   <meta name="description" content="Sell your cell phone and used electronics at Guzu.com. Compare offers instantly, and get cash for your device so you can upgrade! Shipping is free, and there are no fees.">
@@ -15,11 +13,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta http-equiv="cleartype" content="on">
 
-  <script src="scripts/vendor/custom.modernizr-2.6.2.min.js"></script>
+  <!-- build:js scripts/modernizr.js -->
+  <script src="scripts/vendor/custom.modernizr-2.6.2.js"></script>
+  <!-- endbuild -->
 
-  <link rel="stylesheet" href="styles/buttons.css">
+  <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/products.css">
+  <!-- endbuild -->
 </head>
 <body>
   <!-- <div id="menu" class="snap-drawers">
@@ -27,7 +28,6 @@
       hello
     </div>
   </div> -->
-
 
   <div id="page">
     <div id="masthead">
@@ -37,8 +37,8 @@
 
     <div id="main">
       <div class="header">
-        <h2>iPad</h2>
-        <p>Select capacity, condition &amp; type</p>
+        <h2>iPhone 5s</h2>
+        <p>Select capacity, condition &amp; carrier</p>
       </div>
 
       <form class="details" action="index.html">
@@ -70,28 +70,42 @@
           </label>
         </div>
 
-        <div class="section type" select="radio">
-          <h3>Type</h3>
+        <div class="section carrier" select="radio">
+          <h3>Carrier</h3>
           <label>
-            <input type="radio" name="type" value="Wifi">
+            <input type="radio" name="carrier" value="ATT">
             AT&amp;T
           </label>
           <label>
-            <input type="radio" name="type" value="Wifi &amp; 3G">
+            <input type="radio" name="carrier" value="VERIZON">
             Verizon
+          </label>
+          <label>
+            <input type="radio" name="carrier" value="SPRINT">
+            Sprint
+          </label>
+          <label>
+            <input type="radio" name="carrier" value="OTHER">
+            Other
           </label>
         </div>
 
         <div class="submit">
-          <button type="submit" class="radius">Continue</button>
+          <!-- <button type="submit" class="radius">Continue</button> -->
+          <a href="index.html" class="button radius">Continue</a>
           <a href="index.html" class="button secondary radius">Back</a>
         </div>
       </form>
     </div>
   </div>
 
-  <script src="scripts/vendor/zepto.min.js"></script>
+  <!-- build:js scripts/vendor.js -->
+  <script src="scripts/vendor/zepto.js"></script>
   <script src="scripts/vendor/zepto.touch.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
