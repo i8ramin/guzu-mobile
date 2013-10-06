@@ -65,10 +65,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #masthead {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 10px 10px;
   background-color: #fff;
   border-top: 8px solid #60B314;
@@ -76,9 +72,13 @@ h1,h2,h3,h4,h5,h6 {
   box-shadow: 0 3px 0 rgba(0,0,0,.05);
 }
 #masthead .logo {
+  display: block;
+  float: left;
+}
+#masthead .logo img {
+  display: block;
   width: 100px;
   height: auto;
-  float: left;
 }
 #masthead h1 {
   margin-left: 120px;
@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #main {
-  padding: 85px 15px 30px;
+  padding: 15px 15px 30px;
   background: #f4f4f4;
 }
 
@@ -164,7 +164,7 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 4px;
   text-shadow: 1px 1px 0 rgba(0,0,0,.35);
 }
-#products .product .options li a:hover {
+#products .product .options li a.tapped {
   background-color: #333;
 }
 
@@ -179,10 +179,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .panel {
-  border: 1px solid #ddd;
   border-radius: .5em;
   background-color: #fff;
-  box-shadow: 0 2px 2px rgba(0,0,0,.15);
+  box-shadow: 0 3px 2px rgba(0,0,0,.15);
+  overflow: hidden;
 }
 
 .close {

@@ -1,0 +1,30 @@
+CACHE MANIFEST
+# version 2013-10-05 12:08:00 v1.1
+
+CACHE:
+
+# html files
+404.html
+index.html
+products/apple/iphone.html
+products/apple/ipad.html
+
+# css files
+styles/main.css
+styles/buttons.css
+styles/normalize.css
+styles/products.css
+
+# js files
+scripts/vendor/zepto.min.js
+scripts/vendor/zepto.touch.js
+scripts/vendor/custom.modernizr-2.6.2.min.js
+scripts/main.js
+
+# images
+images/logo.gif
+images/products/apple/iphone-multi.png
+images/products/apple/ipad-multi.png
+
+NETWORK:
+*
