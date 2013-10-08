@@ -174,9 +174,9 @@ module.exports = function (grunt) {
         },
         // not used since Uglify task does concat,
         // but still available if needed
-        /*concat: {
-            dist: {}
-        },*/
+        // concat: {
+            // dist: {}
+        // },
         'bower-install': {
             app: {
                 html: '<%= yeoman.app %>/index.html',
@@ -366,10 +366,10 @@ module.exports = function (grunt) {
         'concurrent:dist',
         'autoprefixer',
         'concat',
-        'cssmin',
-        'uglify',
+        // 'cssmin',
+        // 'uglify',
         'copy:dist',
-        'rev',
+        // 'rev',
         'usemin',
         'manifest:dist'
     ]);
