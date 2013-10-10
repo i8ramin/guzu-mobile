@@ -280,11 +280,10 @@ module.exports = function (grunt) {
                     preferOnline: true,
                     verbose: true,
                     timestamp: true,
-                    hash: true,
-                    master: ['index.html']
+                    hash: true
+                    // master: ['index.html']
                 },
                 src: [
-                    'products/{,**/}*.html',
                     'images/{,**/}*.{png,jpg,jpeg,gif,webp}',
                     'scripts/{,**/}*.js',
                     'styles/{,**/}*.css'
