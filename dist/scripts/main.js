@@ -85,10 +85,18 @@
 
   $(document.body).on(touchEvent, '[select] label', function () {
     var label = $(this);
+    var labelRef = label.data('ref');
     var selectParent = label.parents('[select]');
 
     selectParent.find('label.selected').removeClass('selected');
     label.addClass('selected');
+
+    if (labelRef) {
+      selectParent.find('.help-text').hide();
+      selectParent.find('.' + labelRef).show();
+    }
+
+
   });
 
 })(Zepto);

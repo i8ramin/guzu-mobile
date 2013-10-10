@@ -38,48 +38,72 @@
     <div id="main">
       <div class="header">
         <h2>iPad</h2>
-        <p>Select capacity, condition &amp; type</p>
+        <p>Describe your device</p>
+
+        <img src="images/products/apple/ipad-multi.png" class="product-image" width="100">
       </div>
 
       <form class="details" action="index.html">
-        <div class="section capacity" select="radio">
-          <h3>Capacity</h3>
-          <label>
-            <input type="radio" name="capacity" value="16GB">
-            16GB
-          </label>
-          <label>
-            <input type="radio" name="capacity" value="32GB">
-            32GB
-          </label>
-          <label>
-            <input type="radio" name="capacity" value="64GB">
-            64GB
-          </label>
-        </div>
-
         <div class="section condition" select="radio">
-          <h3>Condition</h3>
-          <label>
-            <input type="radio" name="condition" value="Working">
-            Working
-          </label>
-          <label>
-            <input type="radio" name="condition" value="Broken">
-            Broken
-          </label>
+          <h4>Condition</h4>
+          <div class="options">
+            <label data-ref="working">
+              <input type="radio" name="condition" value="working">
+              Working
+            </label>
+            <label data-ref="broken">
+              <input type="radio" name="condition" value="broken">
+              Broken
+            </label>
+          </div>
+
+          <div class="help-text working">
+            <strong>100%</strong> Functional – No Cracks – No Water Damage
+          </div>
+          <div class="help-text broken">
+            Has a defect, cracked screen or does not power up.<br><br>
+            <strong>Note:</strong> If your phone is bent or missing pieces it may be subject to a requite
+          </div>
         </div>
 
-        <div class="section type" select="radio">
-          <h3>Type</h3>
-          <label>
-            <input type="radio" name="type" value="Wifi">
-            AT&amp;T
-          </label>
-          <label>
-            <input type="radio" name="type" value="Wifi &amp; 3G">
-            Verizon
-          </label>
+        <div class="section capacity" select="radio">
+          <h4>Capacity</h4>
+          <div class="options">
+            <label>
+              <input type="radio" name="capacity" value="16GB">
+              16GB
+            </label>
+            <label>
+              <input type="radio" name="capacity" value="32GB">
+              32GB
+            </label>
+            <label>
+              <input type="radio" name="capacity" value="64GB">
+              64GB
+            </label>
+          </div>
+        </div>
+
+        <div class="section carrier" select="radio">
+          <h4>Carrier</h4>
+          <div class="options">
+            <label>
+              <input type="radio" name="carrier" value="ATT">
+              AT&amp;T
+            </label>
+            <label>
+              <input type="radio" name="carrier" value="VERIZON">
+              Verizon
+            </label>
+            <label>
+              <input type="radio" name="carrier" value="SPRINT">
+              Sprint
+            </label>
+            <label>
+              <input type="radio" name="carrier" value="OTHER">
+              Other
+            </label>
+          </div>
         </div>
 
         <div class="submit">

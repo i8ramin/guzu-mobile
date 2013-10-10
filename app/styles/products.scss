@@ -1,9 +1,35 @@
-.details {
-  margin: 20px 0;
 
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  margin: -15px -15px 15px -15px;
+  border-bottom: 1px solid #999;
+  background-color: white;
+
+  .product-image {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.details {
   .section {
     overflow: hidden;
     margin-bottom: 15px;
+
+    .help-text {
+      display: none;
+      clear: left;
+      margin-top: 10px;
+      font-size: 9pt;
+      color: #666;
+    }
+
+    .options {
+      overflow: hidden;
+    }
 
     label {
       display: block;
@@ -11,25 +37,30 @@
       padding: 15px 15px;
       background-color: #ddd;
       border-right: 1px solid #ccc;
-    }
-    label.selected {
-      background-color: #444;
-      color: white;
-    }
-    label input {
-      display: none;
-    }
-    label:first-of-type {
-      border-radius: 3px 0 0 3px;
-    }
-    label:last-of-type {
-      border-radius: 0 3px 3px 0;
-      border-right: 0;
+
+      &.selected {
+        background-color: #444;
+        color: white;
+      }
+      &.selected + .help-text {
+        display: block;
+      }
+      &:first-of-type {
+        border-radius: 3px 0 0 3px;
+      }
+      &:last-of-type {
+        border-radius: 0 3px 3px 0;
+        border-right: 0;
+      }
+
+      input {
+        display: none;
+      }
     }
   }
 
   .submit {
-    margin-top: 40px;
+    margin-top: 30px;
 
     .button:first-of-type {
       float: right;

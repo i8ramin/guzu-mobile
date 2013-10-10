@@ -603,7 +603,7 @@ h6 {
 /* line 94, ../../app/styles/main.scss */
 
 #main {
-  padding: 15px 15px 30px;
+  padding: 15px;
 }
 
 /* line 98, ../../app/styles/main.scss */
@@ -763,20 +763,49 @@ h6 {
 .center {
   text-align: center;
 }
-/* line 1, ../../app/styles/products.scss */
+/* line 2, ../../app/styles/products.scss */
 
-.details {
-  margin: 20px 0;
+.header {
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  margin: -15px -15px 15px -15px;
+  border-bottom: 1px solid #999;
+  background-color: white;
 }
 
-/* line 4, ../../app/styles/products.scss */
+/* line 10, ../../app/styles/products.scss */
+
+.header .product-image {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/* line 18, ../../app/styles/products.scss */
 
 .details .section {
   overflow: hidden;
   margin-bottom: 15px;
 }
 
-/* line 8, ../../app/styles/products.scss */
+/* line 22, ../../app/styles/products.scss */
+
+.details .section .help-text {
+  display: none;
+  clear: left;
+  margin-top: 10px;
+  font-size: 9pt;
+  color: #666;
+}
+
+/* line 30, ../../app/styles/products.scss */
+
+.details .section .options {
+  overflow: hidden;
+}
+
+/* line 34, ../../app/styles/products.scss */
 
 .details .section label {
   display: block;
@@ -786,39 +815,45 @@ h6 {
   border-right: 1px solid #ccc;
 }
 
-/* line 15, ../../app/styles/products.scss */
+/* line 41, ../../app/styles/products.scss */
 
 .details .section label.selected {
   background-color: #444;
   color: white;
 }
 
-/* line 19, ../../app/styles/products.scss */
+/* line 45, ../../app/styles/products.scss */
 
-.details .section label input {
-  display: none;
+.details .section label.selected + .help-text {
+  display: block;
 }
 
-/* line 22, ../../app/styles/products.scss */
+/* line 48, ../../app/styles/products.scss */
 
 .details .section label:first-of-type {
   border-radius: 3px 0 0 3px;
 }
 
-/* line 25, ../../app/styles/products.scss */
+/* line 51, ../../app/styles/products.scss */
 
 .details .section label:last-of-type {
   border-radius: 0 3px 3px 0;
   border-right: 0;
 }
 
-/* line 31, ../../app/styles/products.scss */
+/* line 56, ../../app/styles/products.scss */
 
-.details .submit {
-  margin-top: 40px;
+.details .section label input {
+  display: none;
 }
 
-/* line 34, ../../app/styles/products.scss */
+/* line 62, ../../app/styles/products.scss */
+
+.details .submit {
+  margin-top: 30px;
+}
+
+/* line 65, ../../app/styles/products.scss */
 
 .details .submit .button:first-of-type {
   float: right;
