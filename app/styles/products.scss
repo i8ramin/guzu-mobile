@@ -43,14 +43,11 @@
 
       &.img {
         line-height: 50px;
-      }
-      &.img.selected {
-        // background-color: #eee;
+        padding: 0 10px;
       }
 
       &.selected {
         background-color: #fff;
-        // color: white;
       }
       &.selected + .help-text {
         display: block;
